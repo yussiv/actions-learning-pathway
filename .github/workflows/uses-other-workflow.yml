@@ -1,0 +1,7 @@
+name: uses-other-workflow
+on: push
+jobs:
+  my-job:
+    uses: yussiv/actions-learning-pathway/.github/workflows/build-test-deploy-v2.yml@main
+    with:
+      node-version: '18.x'
